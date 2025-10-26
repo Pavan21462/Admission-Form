@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="st.css">
+</head>
+<body>
+    <!--------------------------------------- Persional details --------------------------------->
+    <div class="All_div_decoration">
+        <h1>Personal Details</h1>
+    <form action="#">
+        <table>
+            <tr> 
+                <td>Name : <input type="text" class="fill"/></td>
+                <td>Middle : <input type="text"  class="fill"/></td>
+                <td>Sirname : <input type="text" class="fill"/></td>
+            </tr>
+            <tr>
+                <td>Father Name : <input type="text" class="fill"/></td>
+                <td>middle : <input type="text" class="fill"/></td>
+                <td>Sirname: <input type="text" class="fill"/></td>
+            </tr>
+            <tr>
+                <td>Mother Name : <input type="text" class="fill"/></td>
+                <td>middle : <input type="text" class="fill"/></td>
+                <td>Sirname : <input type="text" class="fill"/></td>
+            </tr>
+            <tr>
+                <td>DOB : <input type="date" class="fill"></td>
+                <td><span> Gender</span>
+                    <input type="radio"> Male  
+                    <input type="radio"> Female 
+                    <input type="radio">  Other
+                </td>
+                <td><span>Category : </span>
+                    <select>
+                        <option> OBC </option>
+                        <option> General </option>
+                        <option> ST </option>
+                        <option> SC </option>
+                        <option> EWS </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Adhaar Number : <input type="number" minlength="12" maxlength="12" required class="fill"/></td>
+                <td>Mobail Number : <input type="number" minlength="10" maxlength="10" required class="fill"/></td>
+                <td>Email ID : <input type="email"></td>
+            </tr>
+        </table>
+    </form>
+    </div>
+
+    <!--------------------------------------------- Academic Details ------------------------------------>
+
+    <div class="All_div_decoration">
+        <h1>Academic Details</h1>
+        <form>
+            <table>
+                <tr>
+            <td><label>Roll No Of 10th: </label><input type="tel" placeholder="Roll no"></td>
+            <td><label>Totle Number Of 10th :</label><input type="tel" maxlength="4"></td>
+            <td><label>Passing Year :</label> <input type="month"></td>
+            <td><label>BORD :</label> <select name="BORD" id="BORD">
+                <option value="">CBSE BOARD</option>
+                <option value="">UP BOARD</option>
+                <option value="">ICSE BOARD</option>
+                <option value="">MAHARASTR BOARD</option>
+                <option value="">UK BOARD</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td><label>Roll No Of 12th: </label><input type="tel" placeholder="Roll no"></td>
+            <td><label>Totle Number Of 12th :</label><input type="tel" maxlength="4"></td>
+            <td><label>Passing Year :</label> <input type="month"></td>
+            <td><label>BORD :</label> <select name="BORD" id="BORD">
+                <option value="">CBSE BOARD</option>
+                <option value="">UP BOARD</option>
+                <option value="">ICSE BOARD</option>
+                <option value="">MAHARASTR BOARD</option>
+                <option value="">UK BOARD</option>
+            </select></td>
+            </tr>
+        </table>
+        </form>
+    </div>
+
+    <!----------------------------------------------- Address Details ---------------------------------->
+
+    <div class="All_div_decoration">
+        <h1> Address Details</h1>
+
+        <form action="">
+            <table>
+                <tr>
+                    <td><h3>Permanent Address :</h3> <textarea class="address_input"></textarea></td>
+                    <td><h3>Correspondence Address : </h3><textarea placeholder="    OPTIONAL"class="address_input"></textarea></td>
+                </tr>
+                <tr>
+                    <td>State : <input type="text" required class="address_spd"></td>
+                    <td>PIN Code : <input type="text" required class="address_spd"></td>
+                    <td>Dstrict : <input type="text" required class="address_spd"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <!-------------------------------------------------- Document Upload ------------------------------------>
+
+    <div class="All_div_decoration">
+        <h1> Document Upload</h1>
+        <form action="">
+            <table>
+                <tr>
+                    <td>Passport Size Photo : <input type="file" ></td>
+                    <td>Signature : <input type="file" required accept="pdf/*"></td>
+                    <td>10th Marksheet : <input type="file" required accept="pdf/*"></td>
+                </tr>
+                <tr>
+                    <td>12th Marksheet : <input type="file" required accept="pdf/*"></td>
+                    <td>Cast certificate : <input type="file" required accept="pdf/*"></td>
+                    <td>Income certificate : <input type="file" required accept="pdf/*"></td>
+                </tr>
+                <tr>
+                    <td>Transfer certificate (TC)/migration : <input type="file" required accept="pdf/*"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <!-------------------------------------------------- Course Preference -------------------------------------->
+
+    <div class="All_div_decoration">
+        <h1> Course Preference</h1>
+        <form>
+
+            Course name : <select name="" id="">
+                <option value=""> BCA</option>
+                <option value="">  MCA </option>
+                <option value="">  MBA </option>
+                <option value="">  O-LEVEL </option>
+                <option value="">  B-COM </option>
+                <option value="">  M-COM </option>
+            
+            </select>
+
+            Stream : <input type="text">
+        </form>
+    </div>
+
+    <!------------------------------------------------------- Fee Payment ---------------------------------------------->
+
+    <div class="All_div_decoration">
+          <h1>Fee Payment</h1>
+        <form action="">
+        </form>
+    </div>
+    
+</body>
+</html>
