@@ -8,7 +8,7 @@ function match (){
     var real_userpass = "pavan1020"
 
     if(usernam == real_username && userpass == real_userpass){
-        window.location.href="interface/part1.html";
+        window.location.href="interface/PART1.HTML";
     }
     else{
         var info = document.querySelector("h5")
