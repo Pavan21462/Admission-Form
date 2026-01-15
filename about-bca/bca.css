@@ -1,26 +1,107 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
-.container h1{
+
+/* navbaar styling hare */
+
+.navbaar {
+    margin-top: 5px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(61, 117, 236);
+    box-shadow: inset -5px -5px rgba(0, 0, 0, 0.5);
+    border-radius: 20PX;
+    font-family: sans-serif;
+    /* position: fixed;  */
+
+}
+
+
+.nav-1-itm {
+    width: 50%;
+    height: auto;
+    padding-left: 15px;
+    color: #4F1919;
+    font-size: 25px;
+    margin-left: 20PX;
+}
+
+.nav-2-itm {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+
+}
+
+@media (max-width:768px) {
+    .nav-2-itm {
+        display: none;
+    }
+}
+
+.nav {
+    font-size: 20px;
+    color: #fff;
+}
+
+.nav2-1 {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    column-gap: 60px;
+
+}
+
+.nav2-2 {
+    width: 20%;
+    height: auto;
+    margin-left: 50px;
+
+}
+
+.nav2-2 .imag {
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.imag img {
+    height: 100%;
+    width: auto;
+    background-size: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.container h1 {
     display: flex;
     justify-content: center;
     background-color: aqua;
     margin-top: 10px;
     border-radius: 10px;
 }
-.attribute{
+
+.attribute {
     /* margin: 30px 30px; */
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
-     margin-top: 20px;
-     row-gap: 30px;
+    margin-top: 20px;
+    row-gap: 30px;
 }
-#summary{
+
+#summary {
     height: auto;
     width: 50%;
     background-color: aquamarine;
@@ -31,10 +112,11 @@
     border-radius: 10px;
 }
 
-#summary:hover{
-     transform:skew(3deg , 1deg);
+#summary:hover {
+    transform: skew(3deg, 1deg);
 }
-#summary p{
+
+#summary p {
     width: 80%;
     height: auto;
     display: flex;
@@ -45,27 +127,32 @@
     line-height: 25px;
 
 }
-#image{
-     height: auto;
-     width: 450px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
+
+#image {
+    height: auto;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#image img{
+
+#image img {
     position: relative;
     width: 100%;
     height: auto;
     border-radius: 10px;
 }
-#image img:hover{
-   transform: scale(0.9);
+
+#image img:hover {
+    transform: scale(0.9);
 }
-.advantage{
+
+.advantage {
     position: relative;
     margin-top: 50px;
 }
-.advantage h1{
+
+.advantage h1 {
     position: relative;
     display: flex;
     justify-content: center;
@@ -73,78 +160,90 @@
     background-color: rgb(135, 139, 138);
     border-radius: 10px;
 }
-#section{
+
+#section {
     display: flex;
     flex-wrap: wrap;
 }
-#section .images{
+
+#section .images {
     width: 50%;
     height: auto;
 }
-.advantage section{
+
+.advantage section {
     position: relative;
     display: flex;
     justify-content: space-around;
     /* align-items:; */
 }
-.images img{
+
+.images img {
     height: auto;
     width: 100%;
     margin-top: 30px;
 }
+
 /* .advantage section .adv {
     
 } */
-.adv{
+.adv {
     /* position: relative; */
     height: 400px;
     width: 600px;
     margin-top: 30px;
-    display:flex;
+    display: flex;
     flex-direction: column;
     gap: 30px;
     justify-content: center;
     align-items: center;
 }
-.advantage section .adv h3{
+
+.advantage section .adv h3 {
     /* position: relative; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.advantage section .adv form{
+
+.advantage section .adv form {
     position: relative;
     height: 250px;
     width: 200px;
-    border: 5px solid rgb(241, 91, 22,0.5);
+    border: 5px solid rgb(241, 91, 22, 0.5);
     box-shadow: 2px 3px 20px gray;
     line-height: 20px;
     padding: 10px;
     padding-top: 30px;
 }
-.advantage section .adv form input{
+
+.advantage section .adv form input {
     height: 25px;
 }
-.advantage section .adv form span{
+
+.advantage section .adv form span {
     font-size: medium;
 }
-.advantage section .adv form .btn{
+
+.advantage section .adv form .btn {
     position: relative;
     margin-left: 50px;
     margin-top: 20px;
     height: 25px;
     width: 60px;
 }
-.action{
+
+.action {
     position: relative;
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     margin-top: 80px;
     padding-top: 25px;
     margin-bottom: 50px;
     border-top: 5px solid gray;
 }
-.action button{
+
+.action button {
     position: relative;
     display: flex;
     justify-content: center;
@@ -153,7 +252,7 @@
     width: 150px;
     font-size: 20px;
     font-weight: bolder;
-    font-family:sans-serif ;
+    font-family: sans-serif;
     border-radius: 30px;
     border: none;
     /* box-shadow: 0px 1px 5px black; */
@@ -163,20 +262,24 @@
     overflow: hidden;
     background: transparent;
 }
-.action button::before{
+
+.action button::before {
     content: " ";
     position: absolute;
-    top: 0;left: -100%;
+    top: 0;
+    left: -100%;
     width: 200%;
     height: 100%;
-    background: linear-gradient(90deg ,rgb(27, 25, 25),rgb(131, 162, 230),rgb(21, 2, 65));
+    background: linear-gradient(90deg, rgb(27, 25, 25), rgb(131, 162, 230), rgb(21, 2, 65));
     transition: 0.6s;
     z-index: -1;
 }
-.action button:hover::before{
+
+.action button:hover::before {
     left: 0;
 }
-.action button:hover{
+
+.action button:hover {
     color: #000;
 }
 
@@ -218,10 +321,10 @@
     align-items: center;
 }
 
-.footer1-3{ 
- display: flex;
- justify-content: center;
- align-items: center;
+.footer1-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* }  */
@@ -263,59 +366,66 @@
 }
 
 @media (max-width:480px) {
-    .attribute{
-    justify-content: center;
+    .attribute {
+        justify-content: center;
     }
-    #summary{
-    width: 90%;
+
+    #summary {
+        width: 90%;
     }
-    #image{
-     width: 90%;
+
+    #image {
+        width: 90%;
     }
-    .advantage h1{
-    align-items: center;
-    font-size: 25px;
-    height: 40px;
+
+    .advantage h1 {
+        align-items: center;
+        font-size: 25px;
+        height: 40px;
     }
-    #section .images{
-    width: 80%;
+
+    #section .images {
+        width: 80%;
     }
-    .advantage section .adv h3{
-    padding: 15px;
+
+    .advantage section .adv h3 {
+        padding: 15px;
     }
-    .advantage section .adv form{
-    width: 220px;
+
+    .advantage section .adv form {
+        width: 220px;
     }
+
     .footer-1 {
-    margin-top: 10px;
-    display: flex;
-    font-size: 15px;
-}
+        margin-top: 10px;
+        display: flex;
+        font-size: 15px;
+    }
 
-.Contact {
-    list-style: none;
-    font-size: 12px;
-    line-height: 20px;
-}
+    .Contact {
+        list-style: none;
+        font-size: 12px;
+        line-height: 20px;
+    }
 
-.footer1-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .footer1-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.footer1-3{ 
- display: flex;
- justify-content: center;
- align-items: center;
- font-size: 12px;
-}
+    .footer1-3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+    }
 
-.gmail a {
-    line-height: 15px;
-}
+    .gmail a {
+        line-height: 15px;
+    }
 
-.follow {
-    font-size: 10px;
-}
+    .follow {
+        font-size: 10px;
+    }
 }

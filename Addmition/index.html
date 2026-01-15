@@ -1,162 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="st.css">
-</head>
-<body>
-    <!--------------------------------------- Persional details --------------------------------->
-    <div class="All_div_decoration">
-        <h1>Personal Details</h1>
-    <form action="#">
-        <table>
-            <tr> 
-                <td>Name : <input type="text" class="fill"/></td>
-                <td>Middle : <input type="text"  class="fill"/></td>
-                <td>Sirname : <input type="text" class="fill"/></td>
-            </tr>
-            <tr>
-                <td>Father Name : <input type="text" class="fill"/></td>
-                <td>middle : <input type="text" class="fill"/></td>
-                <td>Sirname: <input type="text" class="fill"/></td>
-            </tr>
-            <tr>
-                <td>Mother Name : <input type="text" class="fill"/></td>
-                <td>middle : <input type="text" class="fill"/></td>
-                <td>Sirname : <input type="text" class="fill"/></td>
-            </tr>
-            <tr>
-                <td>DOB : <input type="date" class="fill"></td>
-                <td><span> Gender</span>
-                    <input type="radio"> Male  
-                    <input type="radio"> Female 
-                    <input type="radio">  Other
-                </td>
-                <td><span>Category : </span>
-                    <select>
-                        <option> OBC </option>
-                        <option> General </option>
-                        <option> ST </option>
-                        <option> SC </option>
-                        <option> EWS </option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>Adhaar Number : <input type="number" minlength="12" maxlength="12" required class="fill"/></td>
-                <td>Mobail Number : <input type="number" minlength="10" maxlength="10" required class="fill"/></td>
-                <td>Email ID : <input type="email"></td>
-            </tr>
-        </table>
-    </form>
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <title>Admission Form</title>
+        <link rel="stylesheet" href="addmition.css">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/icons/System/menu-line.svg">
+    </head>
 
-    <!--------------------------------------------- Academic Details ------------------------------------>
+    <body>
+        <!-- navbaar are developed hare -->
+        <nav class="navbaar">
+            <div class="nav-1-itm">
+                <h3> IICS COLLEGE </h3>
+            </div>
 
-    <div class="All_div_decoration">
-        <h1>Academic Details</h1>
-        <form>
-            <table>
-                <tr>
-            <td><label>Roll No Of 10th: </label><input type="tel" placeholder="Roll no"></td>
-            <td><label>Totle Number Of 10th :</label><input type="tel" maxlength="4"></td>
-            <td><label>Passing Year :</label> <input type="month"></td>
-            <td><label>BORD :</label> <select name="BORD" id="BORD">
-                <option value="">CBSE BOARD</option>
-                <option value="">UP BOARD</option>
-                <option value="">ICSE BOARD</option>
-                <option value="">MAHARASTR BOARD</option>
-                <option value="">UK BOARD</option>
-            </select></td>
-        </tr>
-        <tr>
-            <td><label>Roll No Of 12th: </label><input type="tel" placeholder="Roll no"></td>
-            <td><label>Totle Number Of 12th :</label><input type="tel" maxlength="4"></td>
-            <td><label>Passing Year :</label> <input type="month"></td>
-            <td><label>BORD :</label> <select name="BORD" id="BORD">
-                <option value="">CBSE BOARD</option>
-                <option value="">UP BOARD</option>
-                <option value="">ICSE BOARD</option>
-                <option value="">MAHARASTR BOARD</option>
-                <option value="">UK BOARD</option>
-            </select></td>
-            </tr>
-        </table>
-        </form>
-    </div>
+            <div class="nav-2-itm">
 
-    <!----------------------------------------------- Address Details ---------------------------------->
+                <div class="nav2-1">
+                    <a href="#" class="nav"> HOME </a>
+                    <a href="#" class="nav"> ABOUT </a>
+                    <a href="#" class="nav"> PROFILE </a>
+                </div>
 
-    <div class="All_div_decoration">
-        <h1> Address Details</h1>
+                <div class="nav2-2">
+                    <div class="imag">
+                        <img src="../image/dpimage.jpg" title="Profile">
+                    </div>
+                </div>
+            </div>
 
-        <form action="">
-            <table>
-                <tr>
-                    <td><h3>Permanent Address :</h3> <textarea class="address_input"></textarea></td>
-                    <td><h3>Correspondence Address : </h3><textarea placeholder="    OPTIONAL"class="address_input"></textarea></td>
-                </tr>
-                <tr>
-                    <td>State : <input type="text" required class="address_spd"></td>
-                    <td>PIN Code : <input type="text" required class="address_spd"></td>
-                    <td>Dstrict : <input type="text" required class="address_spd"></td>
-                </tr>
-            </table>
-        </form>
-    </div>
+        </nav>
 
-    <!-------------------------------------------------- Document Upload ------------------------------------>
+        <!-- navbaar are End hare -->
+        <div class="container">
+            <h1 align="center">Admission Form</h1>
 
-    <div class="All_div_decoration">
-        <h1> Document Upload</h1>
-        <form action="">
-            <table>
-                <tr>
-                    <td>Passport Size Photo : <input type="file" ></td>
-                    <td>Signature : <input type="file" required accept="pdf/*"></td>
-                    <td>10th Marksheet : <input type="file" required accept="pdf/*"></td>
-                </tr>
-                <tr>
-                    <td>12th Marksheet : <input type="file" required accept="pdf/*"></td>
-                    <td>Cast certificate : <input type="file" required accept="pdf/*"></td>
-                    <td>Income certificate : <input type="file" required accept="pdf/*"></td>
-                </tr>
-                <tr>
-                    <td>Transfer certificate (TC)/migration : <input type="file" required accept="pdf/*"></td>
-                </tr>
-            </table>
-        </form>
-    </div>
+            <!-- Personal Details -->
+            <div class="section">
+                <h2>Personal Details</h2>
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name">
 
-    <!-------------------------------------------------- Course Preference -------------------------------------->
+                <label>Date of Birth
+                    <input type="date">
+                </label>
 
-    <div class="All_div_decoration">
-        <h1> Course Preference</h1>
-        <form>
+                <label>Gender
+                    <div class="gender">
+                        <input type="radio" name="gender"> Male
+                        <input type="radio" name="gender"> Female
+                        <input type="radio" name="gender"> Other
+                    </div>
+                </label>
 
-            Course name : <select name="" id="">
-                <option value=""> BCA</option>
-                <option value="">  MCA </option>
-                <option value="">  MBA </option>
-                <option value="">  O-LEVEL </option>
-                <option value="">  B-COM </option>
-                <option value="">  M-COM </option>
-            
-            </select>
+                <label>Mobile Number</label>
+                <input type="text" placeholder="Enter mobile number">
 
-            Stream : <input type="text">
-        </form>
-    </div>
+                <label>Email</label>
+                <input type="email" placeholder="Enter email">
+            </div>
 
-    <!------------------------------------------------------- Fee Payment ---------------------------------------------->
+            <!-- Academic Details -->
+            <div class="section">
+                <h2>Academic Details</h2>
+                <label>Last Qualification</label>
+                <select>
+                    <option>Select</option>
+                    <option>10th</option>
+                    <option>12th</option>
+                    <option>Graduation</option>
+                </select>
 
-    <div class="All_div_decoration">
-          <h1>Fee Payment</h1>
-        <form action="">
-        </form>
-    </div>
-    
-</body>
+                <label>Board / University
+                    <input type="text">
+                </label>
+
+                <label>Percentage
+                    <input type="text">
+                </label>
+            </div>
+
+            <!-- Address Details -->
+            <div class="section">
+                <h2>Address Details</h2>
+                <label>Address
+                    <textarea rows="3"></textarea>
+                </label>
+
+                <label>City
+                    <input type="text">
+                </label>
+
+                <label>State
+                    <input type="text">
+                </label>
+
+                <label>Pincode
+                    <input type="text">
+                </label>
+            </div>
+
+            <!-- Document Upload -->
+            <div class="section">
+                <h2>Document Upload</h2>
+                <label>Photo
+                    <input type="file">
+                </label>
+
+                <label>ID Proof
+                    <input type="file">
+                </label>
+            </div>
+
+            <!-- Course Preference -->
+            <div class="section">
+                <h2>Course Preference</h2>
+                <label>Select Course</label>
+                <select>
+                    <option>Select Course</option>
+                    <option>BCA</option>
+                    <option>MCA</option>
+                    <option>MBA</option>
+                    <option>O-Level</option>
+                    <option>B-Com</option>
+                    <option>M-Com</option>
+                </select>
+            </div>
+
+            <!-- Fee Payment -->
+            <div class="section">
+                <h2>Fee Payment</h2>
+                <label>Payment Mode</label>
+                <select>
+                    <option>Select</option>
+                    <option>Online</option>
+                    <option>Cash</option>
+                    <option>UPI</option>
+                </select>
+
+                <label>Transaction ID</label>
+                <input type="text" placeholder="If online payment">
+            </div>
+
+            <center>
+                <button type="submit">Submit Admission Form</button>
+            </center>
+        </div>
+
+        <div class="footer">
+
+            <div class="upper part">
+                <p class="text"> welcome in our iics collage and take admission
+                    and work hard then after make your life is
+                    verry essy;<br>
+
+                    If you can dream it than you can do it ;
+
+                </p>
+            </div>
+
+            <div class="footer-1">
+
+                <div class="footer1-1">
+                    <ul class="Contact">
+                        <li> Contact us : 9453970563; </li>
+                        <li> Contact us : 9415039989; </li>
+                        <li> Contact us : 9453970563; </li>
+                        <li> Contact us : 9415039989; </li>
+                    </ul>
+                </div>
+
+                <div class="footer1-2">
+
+                    <p class="Contact"> @Identifyid by IICS collage </p>
+
+                </div>
+
+                <div class="footer1-3">
+                    <div class="gmail">
+                        <a href="#"> Contact us : iics12@gmail.com ;</a>
+                        <a href="#"> Contact us : support9876@gmail.com ;</a>
+                        <a href="#"> Contact us : iics15243@gmail.com ;</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="follow">
+                <a href class="fc"> Follow on Teligram ,</a>
+                <a href class="fc"> Follow on Instagram ,</a>
+                <a href class="fc"> Follow on Twiter ,</a>
+                <a href class="fc"> Follow on insta ,</a>
+            </div>
+        </div>
+
+    </body>
 </html>

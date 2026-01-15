@@ -28,7 +28,7 @@ body {
 
 
 .nav-1-itm {
-    width: 30%;
+    width: 50%;
     height: auto;
     padding-left: 15px;
     color: #4F1919;
@@ -41,13 +41,76 @@ body {
     height: auto;
     display: flex;
     flex-direction: row;
-    
+
+}
+
+@media (max-width:768px) {
+    .nav-2-itm {
+        display: none;
+    }
 }
 
 .nav {
     font-size: 20px;
     color: #fff;
 }
+
+.nav-1-itm {
+    width: 50%;
+    height: auto;
+    padding-left: 15px;
+    color: #4F1919;
+    font-size: 25px;
+    margin-left: 20PX;
+}
+
+.nav-2-itm {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+
+}
+
+@media (max-width:768px) {
+    .nav-2-itm {
+        display: none;
+    }
+}
+
+.nav {
+    font-size: 20px;
+    color: #fff;
+}
+
+.nav-1-itm {
+    width: 50%;
+    height: auto;
+    padding-left: 15px;
+    color: #4F1919;
+    font-size: 25px;
+    margin-left: 20PX;
+}
+
+.nav-2-itm {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+
+}
+
+@media (max-width:768px) {
+    .nav-2-itm {
+        display: none;
+    }
+}
+
+.nav {
+    font-size: 20px;
+    color: #fff;
+}
+
 
 .nav2-1 {
     width: 70%;
@@ -57,7 +120,7 @@ body {
     justify-content: end;
     align-items: center;
     column-gap: 60px;
-   
+
 }
 
 .nav2-2 {
@@ -67,7 +130,7 @@ body {
 
 }
 
-.nav2-2 .imag{
+.nav2-2 .imag {
     height: 40px;
     width: 40px;
     background-color: #fff;
@@ -75,9 +138,9 @@ body {
     overflow: hidden;
 }
 
-.imag img{
+.imag img {
     height: 100%;
-    width:auto;
+    width: auto;
     background-size: cover;
     border-radius: 50%;
     cursor: pointer;
@@ -105,7 +168,7 @@ body {
 
 .container {
     height: fit-content;
-    width:50%;
+    width: 50%;
     display: flex;
     flex-direction: column;
 }
@@ -143,13 +206,14 @@ body {
 .ad-video {
     height: fit-content;
     width: 50%;
-    padding-top: 18px;  
+    padding-top: 18px;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.ad-v{
+
+.ad-v {
     width: 100%;
     height: auto;
 
@@ -190,10 +254,10 @@ body {
     align-items: center;
 }
 
-.footer1-3{ 
- display: flex;
- justify-content: center;
- align-items: center;
+.footer1-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* }  */
@@ -239,7 +303,7 @@ body {
 
 @media (max-width:796px) {
 
-   /* .nav-1-itm{
+    /* .nav-1-itm{
     display: none;
    }
    .nav-2-itm{
@@ -247,70 +311,74 @@ body {
    } */
 
     .text-slide {
-    font-size: 15px;
+        font-size: 15px;
     }
 
     .ad-video {
-    width: 90%;
+        width: 90%;
     }
+
     .container {
-    height: fit-content;
-    width:100%;
-    gap:10px;
-    align-items: center;
+        height: fit-content;
+        width: 100%;
+        gap: 10px;
+        align-items: center;
     }
+
     .About {
-    height: 8vh;
-    width: 350px;
+        height: 8vh;
+        width: 350px;
     }
 
-.co-Manage {
-    width: 100%;
-    height: 100%;
-    color: #fff;
+    .co-Manage {
+        width: 100%;
+        height: 100%;
+        color: #fff;
 
-    font-size: 20px;
-    background: linear-gradient(190deg,#C86666, #6A0808,#EE8787)
-    } 
+        font-size: 20px;
+        background: linear-gradient(190deg, #C86666, #6A0808, #EE8787)
+    }
+
     .footer {
-    display: grid;
+        display: grid;
     }
+
     .text {
-    padding-top: 20px;
-    font-size: 10px;
+        padding-top: 20px;
+        font-size: 10px;
 
-}
+    }
 
-.footer-1 {
-    margin-top: 10px;
-    display: flex;
-    font-size: 15px;
-}
+    .footer-1 {
+        margin-top: 10px;
+        display: flex;
+        font-size: 15px;
+    }
 
-.Contact {
-    list-style: none;
-    font-size: 12px;
-    line-height: 20px;
-}
+    .Contact {
+        list-style: none;
+        font-size: 12px;
+        line-height: 20px;
+    }
 
-.footer1-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .footer1-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.footer1-3{ 
- display: flex;
- justify-content: center;
- align-items: center;
- font-size: 12px;
-}
+    .footer1-3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+    }
 
-.gmail a {
-    line-height: 15px;
-}
+    .gmail a {
+        line-height: 15px;
+    }
 
-.follow {
-    font-size: 10px;
-}
+    .follow {
+        font-size: 10px;
+    }
 }

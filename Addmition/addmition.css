@@ -1,0 +1,281 @@
+ body {
+     font-family: Arial, sans-serif;
+     background: #f2f2f2;
+     margin: 0;
+ }
+
+ /* nambaar are styling hare */
+ .navbaar {
+     margin-top: 5px;
+     height: 60px;
+     display: flex;
+     align-items: center;
+     background-color: rgba(61, 117, 236);
+     box-shadow: inset -5px -5px rgba(0, 0, 0, 0.5);
+     border-radius: 20PX;
+     font-family: sans-serif;
+     /* position: fixed;  */
+
+ }
+
+
+ .nav-1-itm {
+     width: 50%;
+     height: auto;
+     padding-left: 15px;
+     color: #4F1919;
+     font-size: 25px;
+     margin-left: 20PX;
+ }
+
+ .nav-2-itm {
+     width: 70%;
+     height: auto;
+     display: flex;
+     flex-direction: row;
+
+ }
+
+ @media (max-width:768px) {
+     .nav-2-itm {
+         display: none;
+     }
+ }
+
+ .nav {
+     font-size: 20px;
+     color: #fff;
+ }
+
+ .nav2-1 {
+     width: 70%;
+     height: auto;
+     display: flex;
+     flex-direction: row;
+     justify-content: end;
+     align-items: center;
+     column-gap: 60px;
+
+ }
+
+ .nav2-2 {
+     width: 20%;
+     height: auto;
+     margin-left: 50px;
+
+ }
+
+ .nav2-2 .imag {
+     height: 40px;
+     width: 40px;
+     background-color: #fff;
+     border-radius: 50%;
+     overflow: hidden;
+ }
+
+ .imag img {
+     height: 100%;
+     width: auto;
+     background-size: cover;
+     border-radius: 50%;
+     cursor: pointer;
+ }
+
+ /* navbaar are end hare */
+
+ .container {
+     width: 80%;
+     margin: auto;
+     background: #fff;
+     padding: 20px;
+     border-radius: 8px;
+ }
+
+ h2 {
+     background: #4CAF50;
+     color: white;
+     padding: 10px;
+     border-radius: 4px;
+ }
+
+ label {
+     display: block;
+     margin-top: 10px;
+     font-weight: bold;
+ }
+
+ input,
+ select,
+ textarea {
+     width: 100%;
+     padding: 8px;
+     margin-top: 5px;
+ }
+
+ .gender input {
+     width: auto;
+ }
+
+ .section {
+     margin-bottom: 20px;
+ }
+
+ button {
+     background: #4CAF50;
+     color: white;
+     padding: 10px 20px;
+     border: none;
+     font-size: 16px;
+     cursor: pointer;
+     border-radius: 5px;
+ }
+
+ button:hover {
+     background: #45a049;
+ }
+
+
+ /* footer section are hare */
+
+ .footer {
+     background-color: rgb(15, 15, 15);
+     color: whitesmoke;
+     flex-wrap: wrap;
+     margin-top: 40px;
+ }
+
+ .text {
+     padding-top: 20px;
+     font-size: 20px;
+     text-align: center;
+     font-family: sans-serif;
+ }
+
+ .footer-1 {
+     margin-top: 8vh;
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+ }
+
+ .Contact {
+     list-style: none;
+     font-size: large;
+     font-family: sans-serif;
+     line-height: 5vh;
+ }
+
+ .footer1-2 {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .footer1-3 {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ /* }  */
+ /* .author{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border-top: green;
+    margin-left: 80%;
+    background-image: url("footer.jpg"); 
+} */
+ .gmail {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+
+     font-family: sans-serif;
+     color: #fff;
+     line-height: 5vh;
+ }
+
+ .gmail a {
+     color: #fff;
+ }
+
+ .follow {
+     margin-top: 5vh;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     font-size: large;
+     font-family: sans-serif;
+ }
+
+ .fc {
+     color: #fff;
+     padding-bottom: 4vh;
+     flex-wrap: wrap-reverse;
+ }
+
+ @media (max-width:480px) {
+     .attribute {
+         justify-content: center;
+     }
+
+     #summary {
+         width: 90%;
+     }
+
+     #image {
+         width: 90%;
+     }
+
+     .advantage h1 {
+         align-items: center;
+         font-size: 25px;
+         height: 40px;
+     }
+
+     #section .images {
+         width: 80%;
+     }
+
+     .advantage section .adv h3 {
+         padding: 15px;
+     }
+
+     .advantage section .adv form {
+         width: 220px;
+     }
+
+     .footer-1 {
+         margin-top: 10px;
+         display: flex;
+         font-size: 15px;
+     }
+
+     .Contact {
+         list-style: none;
+         font-size: 12px;
+         line-height: 20px;
+     }
+
+     .footer1-2 {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .footer1-3 {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-size: 12px;
+     }
+
+     .gmail a {
+         line-height: 15px;
+     }
+
+     .follow {
+         font-size: 10px;
+     }
+ }
